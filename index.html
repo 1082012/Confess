@@ -5,38 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>💌 Buat Crush 🫣💗</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Library -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Musik -->
+  <audio id="linkmp3">https://feeldreams.github.io/papapa.mp3</audio>
+
   <!-- Background -->
   <div id="bodyblur">
     <img src="https://feeldreams.github.io/wp3.jpeg" id="wallpaper">
   </div>
 
-  <!-- Konten Utama -->
+  <!-- Konten -->
   <div id="Content">
-    
-    <!-- Surat -->
-    <div id="suratin" onclick="mulai()">
+    <!-- Tombol Surat -->
+    <div id="suratin" onclick="memulai();audio.play();">
       <img src="https://rayyscoding.github.io/envelope.png" alt="surat">
     </div>
     <p id="ket">Klik Suratnya!</p>
 
-    <!-- Pesan Box -->
-    <div id="pesanBox" class="hidden">
-      <blockquote id="pesan">
-        <p id="teks"></p>
-      </blockquote>
-    </div>
+    <!-- Pesan -->
+    <blockquote id="bq">
+      <div>
+        <img src="https://feeldreams.github.io/cilukba.gif" id="fotoakhir">
+        <img src="https://htmlku.com/0/panda/ciumin.gif" id="fotoakhir2">
+        <img src="https://feeldreams.github.io/weee.gif" id="fotoakhir3">
+        <img src="https://htmlku.com/0/panda/terlope2.gif" id="fotoakhir4">
+      </div>
+
+      <!-- Pertanyaan -->
+      <p id="kalimat">Kamu Mau Gak Jadi Pacar Aku? 🤭❤️</p>
+      <p id="kalimatb"></p>
+      <p id="kalimatc"></p>
+
+      <!-- Jawaban 1 -->
+      <p id="kalimat2">Yeaayy! 😆</p>
+      <p id="kalimatb2">Sekarang Kamu adalah<br>Pacar Aku hhee 🥳💐</p>
+      <p id="kalimatc2">Eitss.. 🏃 Tapi kita akan<br><b>PUTUS</b> dalam waktu: <b id="ctimer" style="font-size:24px">5</b></p>
+
+      <!-- Jawaban 2 -->
+      <p id="kalimat3">Tapi Boong! 😜</p>
+      <p id="kalimatb3">Kamu beneran jadi<br>pacar aku kok 😝❤️</p>
+      <p id="kalimatc3">ᯓᡣ𐭩<br>
+        Ikan hiuu lagii tremorrr,<br>
+        Hanya kepadamu ku katakan:<br>
+        <b>I lovee uu moreee 🫶🌹💐</b>
+      </p>
+    </blockquote>
 
     <!-- Tombol -->
-    <div id="Tombol" class="hidden">
-      <button id="mauBtn">💌 Mau</button>
-      <button id="gamauBtn">Gamau</button>
+    <div id="Tombol">
+      <a id="By" onclick="multifungsi()"><b id="tmbl">💌 Mau</b></a>
+      <a id="Bn" onclick="btn='Bn';fungsibaru(btn)">Gamau</a>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
-</html>
+</html>    
