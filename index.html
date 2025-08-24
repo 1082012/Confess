@@ -1,79 +1,61 @@
-<!-- Web Confess -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, user-scalable=1, minimum-scale=1, maximum-scale=5'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>💌 htmlku.com/beneran 🫣🩷</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>💌 Buat Crush 🫣🩷</title>
 
-  <!-- Fonts & Icon -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts & Library -->
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
   <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
 
-  <!-- Library -->
-  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-
-  <!-- Style -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Ganti Audio di sini -->
+  <!-- Audio -->
   <audio id="linkmp3">https://feeldreams.github.io/papapa.mp3</audio>
 
+  <!-- Background -->
   <div id="bodyblur">
-    <!-- Wallpaper -->
     <img src="https://feeldreams.github.io/wp3.jpeg" id="wallpaper">
   </div>
 
-  <div id='Content'>
+  <!-- Konten -->
+  <div id="Content">
     <div id="suratin" onclick="memulai();audio.play();">
-      <!-- Tombol Surat -->
       <img src="https://rayyscoding.github.io/envelope.png">
     </div>
     <p id="ket">Klik Suratnya!</p>
 
-    <div>
-      <blockquote id='bq'>
-        <div>
-          <!-- Stiker untuk Konten -->
-          <img src="https://feeldreams.github.io/cilukba.gif" id="fotoakhir">
-          <img src="https://htmlku.com/0/panda/ciumin.gif" id="fotoakhir2">
-          <img src="https://feeldreams.github.io/weee.gif" id="fotoakhir3">
-          <img src="https://htmlku.com/0/panda/terlope2.gif" id="fotoakhir4">
-        </div>
+    <!-- Pesan -->
+    <blockquote id="bq">
+      <img src="https://feeldreams.github.io/cilukba.gif" id="fotoakhir">
+      <img src="https://htmlku.com/0/panda/ciumin.gif" id="fotoakhir2">
+      <img src="https://feeldreams.github.io/weee.gif" id="fotoakhir3">
+      <img src="https://htmlku.com/0/panda/terlope2.gif" id="fotoakhir4">
 
-        <!-- Konten Pertanyaan -->
-        <p id="kalimat">Kamu Mau Gak Jadi Pacar Aku? 🤭❤️</p>
-        <p id="kalimatb"></p>
-        <p id="kalimatc"></p>
-
-        <!-- Konten Jawaban -->
-        <p id="kalimat2">Yeaayy! 😆</p>
-        <p id="kalimatb2">Sekarang Kamu adalah<br>Pacar Aku hhee 🥳💐</p>
-        <p id="kalimatc2">Eitss.. 🏃 Tapi kita akan<br><b>PUTUS</b> dalam waktu: <b id="ctimer" style="font-size:24px">5</b></p>
-
-        <!-- Konten Jawaban 2 -->
-        <p id="kalimat3">Tapi Boong! 😜</p>
-        <p id="kalimatb3">Kamu beneran jadi<br>pacar aku kok 😝❤️</p>
-        <p id="kalimatc3">ᯓᡣ𐭩<br>
-        Ikan hiuu lagii tremorrr,<br>
-        Hanya kepadamu ku katakan:<br>
-        <b>I lovee uu moreee 🫶🌹💐</b></p>
-      </blockquote>
-    </div>
-
-    <!-- Tombol Multifungsi -->
+      <p id="kalimat">Kamu Mau Gak Jadi Pacar Aku? 🤭❤️</p>
+      <p id="kalimatb"></p>
+      <p id="kalimatc"></p>
+      <p id="kalimat2">Yeaayy! 😆</p>
+      <p id="kalimatb2">Sekarang Kamu adalah<br>Pacar Aku hhee 🥳💐</p>
+      <p id="kalimatc2">Eitss.. 🏃 Tapi kita akan<br><b>PUTUS</b> dalam waktu: <b id="ctimer">5</b></p>
+      <p id="kalimat3">Tapi Boong! 😜</p>
+      <p id="kalimatb3">Kamu beneran jadi<br>pacar aku kok 😝❤️</p>
+      <p id="kalimatc3">ᯓᡣ𐭩<br>Ikan hiuu lagii tremorrr,<br>Hanya kepadamu ku katakan:<br><b>I lovee uu moreee 🫶🌹💐</b></p>
+    </blockquote>
+    
+    <!-- Tombol -->
     <div id="Tombol">
       <a id="By" onclick="multifungsi()"><b id="tmbl">💌 Mau</b></a>
       <a id="Bn" onclick="btn='Bn';fungsibaru(btn)">Gamau</a>
     </div>
   </div>
 
-  <!-- Script -->
+  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
